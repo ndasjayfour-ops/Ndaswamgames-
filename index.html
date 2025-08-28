@@ -1,44 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
-     >
   <meta charset="UTF-8">
-  <title>Game Homepage</title>
+  <title>Tovuti ya Notes</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: #121212;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
     }
-    h1 {
-      color: #00ffcc;
+
+    nav {
+      background-color: #2563eb;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-around;
     }
-    .game-link {
-      background: #333;
-      padding: 10px;
-      margin: 10px;
-      display: inline-block;
-      border-radius: 5px;
-    }
-    .game-link a {
-      color: #00ffcc;
+
+    nav a {
+      color: white;
       text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #1e3a8a;
+    }
+
+    #home img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Game Page</h1>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764426342709404"
-     crossorigin="anonymous"></script>
-  <div class="game-link">
-    <a href="games/game1.zip" download>Download Game 1</a>
-  </div>
 
-  <div class="game-link">
-    <a href="games/game2.zip" download>Download Game 2</a>
-  </div>
+<nav>
+  <a href="#" onclick="showSection('home')">Home</a>
+  <a href="#" onclick="showSection('notes')">Notes</a>
+  <a href="#" onclick="showSection('about')">About</a>
+</nav>
+
+<div id="home" class="section">
+  <h1>Karibu kwenye Tovuti ya Notes</h1>
+  <p>Hapa unaweza kupata notes mbalimbali za masomo yako kwa urahisi na haraka.</p>
+  <img src="games/images.jpeg" alt="Notes">
+</div>
+
+<div id="notes" class="section hidden">
+  <h1>Notes</h1>
+  <p>Sehemu hii ni ya kuweka maelezo au link za kupakua notes zako za masomo mbalimbali.</p><li><a href="cmt4.html"> fungua hapa notes za CMT4</a></li>.</p><li><a href="cmt5.html"> fungua hapa notes za CMT5</a></li>.</p><li><a href="cmt6.html"> fungua hapa notes za CMT6</a></li>
+
+</div>
+<div id="about" class="section hidden">
+  <h1>Kuhusu</h1>
+  <p>Hii ni tovuti ya kujifunza kwa kutumia notes zilizokusanywa kwa wanafunzi wa Clinical Medicine kww mtaala wa mwaka wa 2022 ambao unaishia mwaka 2027.</p></div><div style="font-family: Arial, sans-serif; max-width: 300px; background: #f0f8ff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); color: #004080;">
+  <h3 style="margin-bottom: 10px;">Mawasiliano</h3>
+  <p style="margin: 6px 0;">Email: <a href="mailto:example@email.com" style="color: #0077cc; text-decoration: none;">jumannendange@gmail.com</a></p>
+  <p style="margin: 6px 0; font-weight: 600; letter-spacing: 4px;">Simu: 0616393956</p>
+</div>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
+    document.getElementById(id).classList.remove('hidden');
+  }
+</script>
 
 </body>
 </html>
