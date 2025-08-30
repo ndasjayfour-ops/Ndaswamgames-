@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internal Medicine Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #34495e;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      padding: 18px 20px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 17px;
+      color: #2c3e50;
+      flex: 1;
+    }
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 8px 14px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      color: #fff;
+      margin-left: 8px;
+      min-width: 80px;
+    }
+    .view-btn {
+      background-color: #27ae60;
+    }.view-btn:hover {
+      background-color: #1e8e4a;
+    }
+    .download-btn {
+      background-color: #2980b9;
+    }
+    .download-btn:hover {
+      background-color: #1f5d8a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Internal Medicine Notes</h1>
+
+  <!-- Documents 1 to 20 -->
+  <div class="card">
+    <h3>Document 1: Cardiovascular Disorders</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc1.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc1.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 2: Respiratory Diseases</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc2.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc2.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 3: Gastrointestinal Disorders</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc3.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc3.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 4: Endocrine Disorders</h3><button class="view-btn" onclick="window.open('notes/internal_medicine/doc4.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc4.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 5: Renal Diseases</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc5.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc5.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 6: Hematological Disorders</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc6.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc6.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 7: Infectious Diseases</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc7.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc7.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 8: Neurological Disorders</h3><button class="view-btn" onclick="window.open('notes/internal_medicine/doc8.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc8.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 9: Rheumatology</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc9.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc9.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 10: Oncology</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc10.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc10.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 11: Diabetes Mellitus</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc11.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc11.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 12: Hypertension</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc12.pdf', '_blank')">Angalia</button><button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc12.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 13: Liver Diseases</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc13.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc13.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 14: Immunology</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc14.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc14.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 15: Fluid and Electrolyte Disorders</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc15.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc15.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 16: Acid-Base Disorders</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc16.pdf', '_blank')">Angalia</button><button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc16.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 17: Geriatrics</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc17.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc17.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 18: Critical Care Medicine</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc18.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc18.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 19: Pulmonary Medicine</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc19.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc19.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 20: Infectious Disease Control</h3>
+    <button class="view-btn" onclick="window.open('notes/internal_medicine/doc20.pdf', '_blank')">Angalia</button><button class="download-btn" onclick="downloadFile('notes/internal_medicine/doc20.pdf')">Download</button>
+  </div>
+
+  <script>
+    function downloadFile(url) {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+
+</body>
+</html>
