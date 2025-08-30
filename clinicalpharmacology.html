@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clinical Pharmacology Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #34495e;
+    }
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;transition: background 0.3s ease;
+      color: white;
+      margin-left: 10px;
+    }
+    .view-btn {
+      background-color: #27ae60; /* green */
+    }
+    .view-btn:hover {
+      background-color: #219150;
+    }
+    .download-btn {
+      background-color: #2980b9; /* blue */
+    }
+    .download-btn:hover {
+      background-color: #1e6091;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Clinical Pharmacology Notes</h1>
+
+  <!-- Box 1 hadi 20 -->
+  <div class="card">
+    <h3>Document 1: Introduction to Clinical Pharmacology</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc1.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc1.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 2: Drug Absorption and Distribution</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc2.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc2.pdf')">Download</button>
+  </div>
+
+  <!-- Endelea kwa Documents 3 mpaka 20, badilisha majina kwa inayoendana -->
+  <div class="card">
+    <h3>Document 3: Drug Metabolism</h3><button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc3.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc3.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 4: Drug Excretion</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc4.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc4.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 5: Pharmacodynamics</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc5.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc5.pdf')">Download</button>
+  </div>
+
+  <!-- Continue for docs 6 to 20 -->
+  <div class="card">
+    <h3>Document 6: Drug Receptors and Mechanisms of Action</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc6.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc6.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 7: Adverse Drug Reactions</h3><button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc7.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc7.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 8: Drug Interactions</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc8.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc8.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 9: Clinical Trials and Drug Development</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc9.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc9.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 10: Pharmacogenomics</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc10.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc10.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 11: Antibiotics</h3><button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc11.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc11.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 12: Antiviral Drugs</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc12.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc12.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 13: Antifungal Drugs</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc13.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc13.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 14: Cardiovascular Drugs</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc14.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc14.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 15: Drugs Affecting CNS</h3><button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc15.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc15.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 16: Endocrine Drugs</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc16.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc16.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 17: Chemotherapy</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc17.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc17.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 18: Immunosuppressive Drugs</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc18.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc18.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 19: Herbal and Alternative Medicines</h3><button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc19.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc19.pdf')">Download</button>
+  </div>
+
+  <div class="card">
+    <h3>Document 20: Recent Advances in Pharmacology</h3>
+    <button class="view-btn" onclick="window.open('notes/clinical_pharmacology/doc20.pdf', '_blank')">Angalia</button>
+    <button class="download-btn" onclick="downloadFile('notes/clinical_pharmacology/doc20.pdf')">Download</button>
+  </div>
+
+  <script>
+    function downloadFile(url) {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+
+</body>
+</html>
