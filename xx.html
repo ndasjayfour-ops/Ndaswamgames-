@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Live Football Matches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .match {
+      background: white;
+      border: 1px solid #ccc;
+      margin: 15px auto;
+      padding: 10px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mechi Zinazoendelea</h1>
+  <div id="matches">Inapakia...</div>
+
+  <script>
+    const apiUrl = "https://www.football-data.org/"; // ← Badilisha hii na API yako halisi
+    const apiToken = '69fa8f1ad2224307933822440d1bf3ce'; // ← Weka token yako halisi hapa
+
+    fetch(apiUrl, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${apiToken}`,
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('matches');
+      container.innerHTML = '';if (data.length === 0) 
+        container.innerHTML = 'Hakuna mechi za sasa.';
+      
+
+      data.forEach(match => 
+        const div = document.createElement('div');
+        div.className = 'match';
+        div.innerHTML = `
+          <strong>{match.home_team} vs match.away_team</strong><br>
+          Score:{match.home_score} - match.away_score<br>
+          Time:{match.time}
+        `;
+        container.appendChild(div);
+      });
+    })
+    .catch(err => {
+      document.getElementById('matches').textContent = 'Imeshindikana kupakia data.';
+      console.error(err);
+    });
+  </script>
+</body>
+</html>
